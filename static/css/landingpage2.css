@@ -104,46 +104,15 @@ body {
 }
 
 .main-heading {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 2rem;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .welcome-text {
-    font-size: 3.5rem;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-/* Hero Stats */
-.hero-stats {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 60px; /* Space between welcome text and stats */
-}
-
-.stat-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 20px 40px;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-10px);
-}
-
-.stat-number {
-    font-size: 2.5rem;
+    font-size: 5rem;
     font-weight: 700;
-    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 /* App Button */
@@ -179,7 +148,7 @@ body {
     }
 
     .welcome-text {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .hero-stats {
@@ -570,9 +539,9 @@ color: var(--green-primary);
     .main-heading {
         font-size: 3rem;
     }
-    
+
     .welcome-text {
-        font-size: 2rem;
+        font-size: 5rem;
     }
 }
 
@@ -580,18 +549,18 @@ color: var(--green-primary);
     .navbar-brand {
         margin-left: 20px;
     }
-    
+
     .hero-stats {
         flex-direction: column;
         align-items: center;
         bottom: 200px;
         gap: 20px;
     }
-    
+
     .stat-card {
         padding: 15px 30px;
     }
-    
+
     .about-text {
         text-align: center;
         margin-top: 40px;
@@ -600,17 +569,17 @@ color: var(--green-primary);
 
 @media (max-width: 768px) {
     .main-heading {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
-    
+
     .welcome-text {
-        font-size: 1.8rem;
+        font-size: 3rem;
     }
-    
+
     .section {
         padding: 60px 0;
     }
-    
+
     .feature-card {
         margin-bottom: 30px;
     }
@@ -618,13 +587,13 @@ color: var(--green-primary);
 
 @media (max-width: 576px) {
     .main-heading {
+        font-size: 1.3rem;
+    }
+
+    .welcome-text {
         font-size: 2rem;
     }
-    
-    .welcome-text {
-        font-size: 1.5rem;
-    }
-    
+
     .app-button {
         padding: 12px 30px;
         font-size: 1rem;
