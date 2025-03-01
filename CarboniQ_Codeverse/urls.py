@@ -24,15 +24,27 @@ urlpatterns = [
 ]
 
 
-mainapp = [
-
+mainappurl = [
+path('homepage/', mviews.homepage, name='homepage'),
 ]
 
-authapp = [
-path('', aviews.landingpage, name="landingpage"),
-path('login/', aviews.loginpage, name='login'), 
-
+authappurl = [
+    path('', aviews.landingpage, name="landingpage"),
+    path('home/', aviews.landingpage, name='home'),
+    path('login/', aviews.loginpage, name='login'), 
+    path('signup/', aviews.signuppage, name="signup"),
+    path('view_profile/<int:user_id>/', aviews.view_profile, name='view_profile'),
+    path('edit_profile/<int:user_id>/', aviews.edit_profile, name='edit_profile'),
+    path('logout/', aviews.user_logout, name='logout'),
+    path('avatar_selection/', aviews.avatar_selection, name='avatar_selection'),
+    path('update-avatar/', aviews.update_avatar, name='update_avatar'),
+    path('add_friend/<int:user_id>/', aviews.add_friend, name='add_friend'),
+    path('friends_list/', aviews.friends_list, name='friends_list'),
+    path('accept_request/<int:request_id>/', aviews.accept_request, name='accept_request'),
+    path('decline_request/<int:request_id>/', aviews.decline_request, name='decline_request'),
+    path('search/', aviews.search_users, name='search_users'),
 ]
 
 
-urlpatterns = mainapp + authapp + urlpatterns
+
+urlpatterns = mainappurl + authappurl + urlpatterns
